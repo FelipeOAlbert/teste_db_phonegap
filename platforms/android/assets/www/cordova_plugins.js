@@ -6,12 +6,20 @@ module.exports = [
         "clobbers": [
             "SQLitePlugin"
         ]
+    },
+    {
+        "file": "plugins/me.rahul.plugins.sqlDB/www/sqlDB.js",
+        "id": "me.rahul.plugins.sqlDB.sqlDB",
+        "clobbers": [
+            "window.plugins.sqlDB"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.phonegap.plugins.sqlite": "1.0.0"
+    "com.phonegap.plugins.sqlite": "1.0.0",
+    "me.rahul.plugins.sqlDB": "1.0.0"
 }
 // BOTTOM OF METADATA
 });
