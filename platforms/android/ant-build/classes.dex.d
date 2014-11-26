@@ -6,6 +6,9 @@
 /var/www/teste_bd/platforms/android/ant-build/classes/com/phonegap/helloworld/R.class \
 /var/www/teste_bd/platforms/android/ant-build/classes/com/phonegap/helloworld/R$xml.class \
 /var/www/teste_bd/platforms/android/ant-build/classes/com/phonegap/helloworld/R$drawable.class \
+/var/www/teste_bd/platforms/android/ant-build/classes/me/rahul/plugins/sqlDB/sqlDB.class \
+/var/www/teste_bd/platforms/android/ant-build/classes/me/rahul/plugins/sqlDB/sqlDB$1.class \
+/var/www/teste_bd/platforms/android/ant-build/classes/me/rahul/plugins/sqlDB/DatabaseHelper.class \
 /var/www/teste_bd/platforms/android/ant-build/classes/org/pgsqlite/SQLitePlugin$1.class \
 /var/www/teste_bd/platforms/android/ant-build/classes/org/pgsqlite/SQLitePlugin$2.class \
 /var/www/teste_bd/platforms/android/ant-build/classes/org/pgsqlite/SQLitePlugin.class \

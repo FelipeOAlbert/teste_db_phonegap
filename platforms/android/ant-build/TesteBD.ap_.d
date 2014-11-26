@@ -30,11 +30,15 @@
 /var/www/teste_bd/platforms/android/assets/www/cordova.js \
 /var/www/teste_bd/platforms/android/assets/www/spec \
 /var/www/teste_bd/platforms/android/assets/www/js \
+/var/www/teste_bd/platforms/android/assets/www/assets \
 /var/www/teste_bd/platforms/android/assets/www/img \
 /var/www/teste_bd/platforms/android/assets/www/spec.html \
 /var/www/teste_bd/platforms/android/assets/www/css \
 /var/www/teste_bd/platforms/android/assets/www/cordova_plugins.js \
+/var/www/teste_bd/platforms/android/assets/www/plugins/me.rahul.plugins.sqlDB \
 /var/www/teste_bd/platforms/android/assets/www/plugins/com.phonegap.plugins.sqlite \
+/var/www/teste_bd/platforms/android/assets/www/plugins/me.rahul.plugins.sqlDB/www \
+/var/www/teste_bd/platforms/android/assets/www/plugins/me.rahul.plugins.sqlDB/www/sqlDB.js \
 /var/www/teste_bd/platforms/android/assets/www/plugins/com.phonegap.plugins.sqlite/www \
 /var/www/teste_bd/platforms/android/assets/www/plugins/com.phonegap.plugins.sqlite/www/SQLitePlugin.js \
 /var/www/teste_bd/platforms/android/assets/www/res/icon \
@@ -108,6 +112,7 @@
 /var/www/teste_bd/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine.js \
 /var/www/teste_bd/platforms/android/assets/www/js/index.js \
 /var/www/teste_bd/platforms/android/assets/www/js/jquery.js \
+/var/www/teste_bd/platforms/android/assets/www/assets/test.db \
 /var/www/teste_bd/platforms/android/assets/www/img/logo.png \
 /var/www/teste_bd/platforms/android/assets/www/css/index.css \
 /var/www/teste_bd/platforms/android/ant-build/AndroidManifest.xml \
