@@ -23,6 +23,7 @@
 /var/www/teste_bd/platforms/android/ant-build/res/drawable-port-hdpi/screen.png \
 /var/www/teste_bd/platforms/android/assets/www \
 /var/www/teste_bd/platforms/android/assets/_where-is-www.txt \
+/var/www/teste_bd/platforms/android/assets/test.db \
 /var/www/teste_bd/platforms/android/assets/www/plugins \
 /var/www/teste_bd/platforms/android/assets/www/res \
 /var/www/teste_bd/platforms/android/assets/www/index.html \
@@ -30,7 +31,6 @@
 /var/www/teste_bd/platforms/android/assets/www/cordova.js \
 /var/www/teste_bd/platforms/android/assets/www/spec \
 /var/www/teste_bd/platforms/android/assets/www/js \
-/var/www/teste_bd/platforms/android/assets/www/assets \
 /var/www/teste_bd/platforms/android/assets/www/img \
 /var/www/teste_bd/platforms/android/assets/www/spec.html \
 /var/www/teste_bd/platforms/android/assets/www/css \
@@ -112,7 +112,6 @@
 /var/www/teste_bd/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine.js \
 /var/www/teste_bd/platforms/android/assets/www/js/index.js \
 /var/www/teste_bd/platforms/android/assets/www/js/jquery.js \
-/var/www/teste_bd/platforms/android/assets/www/assets/test.db \
 /var/www/teste_bd/platforms/android/assets/www/img/logo.png \
 /var/www/teste_bd/platforms/android/assets/www/css/index.css \
 /var/www/teste_bd/platforms/android/ant-build/AndroidManifest.xml \
