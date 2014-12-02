@@ -23,7 +23,8 @@
 /var/www/teste_bd/platforms/android/ant-build/res/drawable-port-hdpi/screen.png \
 /var/www/teste_bd/platforms/android/assets/www \
 /var/www/teste_bd/platforms/android/assets/_where-is-www.txt \
-/var/www/teste_bd/platforms/android/assets/test.db \
+/var/www/teste_bd/platforms/android/assets/www/teste.sql \
+/var/www/teste_bd/platforms/android/assets/www/teste.json \
 /var/www/teste_bd/platforms/android/assets/www/plugins \
 /var/www/teste_bd/platforms/android/assets/www/res \
 /var/www/teste_bd/platforms/android/assets/www/index.html \

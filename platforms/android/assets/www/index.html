@@ -39,7 +39,30 @@
                 $(".listening").hide();
                 $(".received").show();
                 
-                db = window.sqlitePlugin.openDatabase({name: "teste_phonegap.db"});
+                //db = window.sqlitePlugin.openDatabase("teste_phonegap.db", "1.0", "teste_phonegap.db", 100000);
+                //alert('db creating: '+ JSON.stringify(db));
+                //db.transaction(createTable);
+                
+                
+                //db.transaction(function(tx) {
+                    
+                    //tx.executeSql('DROP TABLE IF EXISTS test_table');
+                    //tx.executeSql('CREATE TABLE IF NOT EXISTS test_table (id integer primary key, nome text, sexo text)');
+                    
+                    // lendo os dados
+                    //tx.executeSql("SELECT * FROM test_table;", [], function(tx, res) {
+                        //listData(res);
+                        
+                        //alert(res);
+                        //alert(JSON.stringify(res));
+                        
+                    //});
+                //}, function(e) {
+                    //alert("ERROR: " + e.message);
+                //});
+                
+                
+                db = window.sqlitePlugin.openDatabase({name: "banco_dados"});
                 
                 selectDados();
             }
@@ -49,7 +72,7 @@
                 db.transaction(function(tx) {
                     
                     //tx.executeSql('DROP TABLE IF EXISTS test_table');
-                    //tx.executeSql('CREATE TABLE IF NOT EXISTS test_table (id integer primary key, nome text, sexo text)');
+                    tx.executeSql('CREATE TABLE IF NOT EXISTS test_table (id integer primary key, nome text, sexo text)');
                     
                     // lendo os dados
                     tx.executeSql("SELECT * FROM test_table;", [], function(tx, res) {
@@ -80,8 +103,9 @@
                     alert('sem dados para listar, adicionando...');
                     console.log('sem dados para listar, adicionando...');
                     
-                    
                     dbcopy();
+                    
+                    
                     
                     
                     //$('#nameList').html('Sem dados para exibir');
@@ -90,25 +114,89 @@
             
             function dbcopy()
             {
-                window.plugins.sqlDB.copy("test.db",copysuccess,copyerror);
+                //$.getJSON("teste.json", function(data){
+                
+                var filePath = "teste.sql";
+                
+                $.get(filePath, function (response) {
+                    var statements = response.split('\n');
+                    
+                    alert('vamos testar a insercao');
+                    
+                    alert(statements);
+                    
+                    
+                    db.transaction(function(tx) {
+                        
+                        
+                        $.each(statements, function (index, value) {
+                            if (value != '') {
+                                
+                                
+                                tx.executeSql(value, [], successHandler, function (e) {
+                                    alert("Error executing sql " + value)
+                                });
+                                
+                                
+                                //transaction.executeSql(value, [], successHandler, function (e) {
+                                //    alert("Error executing sql " + value)
+                                //});
+                            }
+                        });
+                        
+                        // lendo os dados
+                        tx.executeSql("SELECT * FROM test_table;", [], function(tx, res) {
+                            
+                            alert('listar denovo');
+                            
+                            listData(res);
+                        });
+                    }, function(e) {
+                        alert("ERROR: " + e.message);
+                    });
+                    
+                    
+                    
+                    
+                    
+                });
             }
             
-            function copysuccess()
-            {
-                //open db and run your queries
-                
-                alert('copiado.... voltando para rotina de listagem....');
-                console.log('copiado.... voltando para rotina de listagem....');
-                
-                selectDados();
+            function successHandler() {
+                alert('Foi...');
             }
             
-            function copyerror(e)
-            {
-                //db already exists or problem in copying the db file. Check the Log.
-                alert("Error = "+JSON.stringify(e));
-                console.log("Error = "+JSON.stringify(e));
-            }
+            //
+            //function copysuccess()
+            //{
+            //    //open db and run your queries
+            //    
+            //    alert('copiado.... voltando para rotina de listagem....');
+            //    console.log('copiado.... voltando para rotina de listagem....');
+            //    
+            //    
+            //    var db = window.sqlitePlugin.openDatabase("teste_phonegap.db", "1.0", "Test DB", -1);
+            //    
+            //    db.transaction(function(tx) {
+            //        
+            //        // lendo os dados
+            //        tx.executeSql("SELECT * FROM test_table;", [], function(tx, res) {
+            //            listData(res);
+            //        });
+            //    }, function(e) {
+            //        alert("ERROR: " + e.message);
+            //    });
+            //    
+            //    
+            //    //selectDados();
+            //}
+            
+            //function copyerror(e)
+            //{
+            //    //db already exists or problem in copying the db file. Check the Log.
+            //    alert("Error = "+JSON.stringify(e));
+            //    console.log("Error = "+JSON.stringify(e));
+            //}
             
         </script>
     </body>
