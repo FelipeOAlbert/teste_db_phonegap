@@ -1,3 +1,0 @@
-INSERT INTO test_table (nome, sexo) VALUES ("Ronaldo","masculino");
-INSERT INTO test_table (nome, sexo) VALUES ("Teste","feminino");
-INSERT INTO test_table (nome, sexo) VALUES ("Pagina","Indefinido");

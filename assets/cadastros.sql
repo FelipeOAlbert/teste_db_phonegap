@@ -1,7 +1,0 @@
-PRAGMA foreign_keys=OFF;
-BEGIN TRANSACTION;
-CREATE TABLE usuarios (nome TEXT, sexo TEXT);
-INSERT INTO "usuarios" VALUES('Thiago','Sim');
-INSERT INTO "usuarios" VALUES('423432','324324');
-INSERT INTO "usuarios" VALUES('4543543','454354');
-COMMIT;
